@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class application {
+
+    void main(){
+
+      IO.println("Insira as medidas do triangulo X: ");
+
+      double xA = Double.parseDouble(IO.readln());
+      double xB = Double.parseDouble(IO.readln());
+      double xC = Double.parseDouble(IO.readln());
+
+      IO.println("Insira as meddias do triangulo Y: ");
+
+      double yA = Double.parseDouble(IO.readln());
+      double yB = Double.parseDouble(IO.readln());
+      double yC = Double.parseDouble(IO.readln());
+
+      double x = (xA + xB + xC)/2;
+      double areaX = Math.sqrt(x * (x - xA) * (x - xB) * (x - xC));
+
+      double y = (yA + yB + yC)/2;
+      double areaY = Math.sqrt(y * (y - yA) * (y - yB) * (y - yC));
+      IO.println(String.format("Area do triangulo X é: %.2f%n", areaX));
+      IO.println(String.format("Area do triangulo Y é: %.2f%n", areaY));
+
+      if (areaX > areaY){
+          IO.println(String.format("A Maior area é X: %.2f%n", areaX));
+      } else {
+          IO.println(String.format("A Maior area é Y: %.2f%n", areaY));
+      }
+
+    }
+
+}
