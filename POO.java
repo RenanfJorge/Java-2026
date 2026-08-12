@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class application {
+public class POO {
 
     void main(){
 
